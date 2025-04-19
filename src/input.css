@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --bg-color: 243, 244, 246;
+        --primary-color: 5, 150, 105;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg-color: 31, 41, 55;
+            --primary-color: 16, 185, 129;
+        }
+    }
+
+    :root[data-theme = "dark" ] {
+        --bg-color: 31, 41, 55;
+        --primary-color: 16, 185, 129;
+    }
+
+    :root[data-theme = "lime" ] {
+        --bg-color: 243, 244, 246;
+        --primary-color: 163, 230, 53;
+    }
+
+  }
