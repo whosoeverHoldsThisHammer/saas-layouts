@@ -570,6 +570,13 @@ video {
   }
 }
 
+:root[data-theme = "light" ] {
+  --bg-color: 255, 255, 255;
+  --primary-color: 5, 150, 105;
+  --surface-color: 17, 24, 39;
+  --surface-container-color: 243, 244, 246;
+}
+
 :root[data-theme = "dark" ] {
   --bg-color: 17, 24, 39;
   --primary-color: 16, 185, 129;
@@ -588,6 +595,11 @@ video {
   display: flex;
 }
 
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -596,8 +608,16 @@ video {
   min-height: 100%;
 }
 
-.w-72 {
-  width: 18rem;
+.w-80 {
+  width: 20rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .flex-row {
@@ -606,6 +626,16 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-x-2\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.625rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.625rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {

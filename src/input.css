@@ -19,6 +19,13 @@
         }
     }
 
+    :root[data-theme = "light" ] {
+        --bg-color: 255, 255, 255;
+        --primary-color: 5, 150, 105;
+        --surface-color: 17, 24, 39;
+        --surface-container-color: 243, 244, 246;
+    }
+
     :root[data-theme = "dark" ] {
         --bg-color: 17, 24, 39;
         --primary-color: 16, 185, 129;
@@ -32,5 +39,6 @@
         --surface-color: 17, 24, 39;
         --surface-container-color: 243, 244, 246;
     }
+
 
   }
