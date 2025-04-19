@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       colors: {
         background: "rgb(var(--bg-color))",
-        primary: "rgb(var(--primary-color))"
+        primary: "rgb(var(--primary-color))",
+        surface: "rgb(var(--surface-color))",
+        container: "rgb(var(--surface-container-color))"
       }
     },
   },

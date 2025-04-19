@@ -1587,10 +1587,33 @@
 
   // src/index.js
   var import_mithril = __toESM(require_mithril());
-  var helloWorld = {
+  var Settings = {
     view: function(vnode) {
-      return (0, import_mithril.default)("div", { class: "text-xl font-medium text-primary" }, "hello world");
+      return (0, import_mithril.default)("div", { class: "flex flex-row text-surface" }, [
+        (0, import_mithril.default)("div", { class: "px-6 pb-4 w-72 space-y-2 text-sm" }, [
+          (0, import_mithril.default)("div", { class: "rounded-md p-2 bg-container font-medium" }, "Appearance"),
+          (0, import_mithril.default)("div", { class: "rounded-md p-2 font-medium" }, "Notifications"),
+          (0, import_mithril.default)("div", { class: "rounded-md p-2 font-medium" }, "Profile"),
+          (0, import_mithril.default)("div", { class: "rounded-md p-2 font-medium" }, "Team"),
+          (0, import_mithril.default)("div", { class: "rounded-md p-2 font-medium" }, "Billing")
+        ]),
+        (0, import_mithril.default)("div", [
+          (0, import_mithril.default)("div", { class: "text-lg font-medium" }, "Appearance"),
+          (0, import_mithril.default)("div", { class: "text-sm font-medium" }, "Theme"),
+          (0, import_mithril.default)("div", { class: "flex flex-row items-center space-x-4" }, [
+            (0, import_mithril.default)("div", [
+              (0, import_mithril.default)("div", "Light")
+            ]),
+            (0, import_mithril.default)("div", [
+              (0, import_mithril.default)("div", "Dark")
+            ]),
+            (0, import_mithril.default)("div", [
+              (0, import_mithril.default)("div", "Lime")
+            ])
+          ])
+        ])
+      ]);
     }
   };
-  import_mithril.default.mount(document.getElementById("app"), helloWorld);
+  import_mithril.default.mount(document.getElementById("app"), Settings);
 })();
