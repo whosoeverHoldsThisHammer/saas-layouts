@@ -645,6 +645,10 @@ video {
   flex-shrink: 0;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -681,6 +685,26 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-gray-400\/50 {
+  border-color: rgb(156 163 175 / 0.5);
+}
+
+.border-gray-500\/50 {
+  border-color: rgb(107 114 128 / 0.5);
+}
+
+.border-lime-500\/50 {
+  border-color: rgb(132 204 22 / 0.5);
+}
+
+.border-rose-500\/50 {
+  border-color: rgb(244 63 94 / 0.5);
 }
 
 .bg-background {
@@ -749,4 +773,8 @@ video {
 
 .text-surfacevariant {
   color: rgb(var(--surface-variant-color));
+}
+
+.hover\:bg-container:hover {
+  background-color: rgb(var(--surface-container-color));
 }
