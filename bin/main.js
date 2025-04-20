@@ -1586,7 +1586,14 @@
   });
 
   // src/index.js
-  var import_mithril = __toESM(require_mithril());
+  var import_mithril = __toESM(require_mithril(), 1);
+
+  // utils/setter.js
+  var setTheme = (theme) => {
+    document.querySelector("html").setAttribute("data-theme", theme);
+  };
+
+  // src/index.js
   var Settings = {
     view: function(vnode) {
       return (0, import_mithril.default)("div", { class: "flex flex-row text-surface" }, [
@@ -1645,21 +1652,21 @@
         (0, import_mithril.default)("div", { class: "py-8 px-6 w-full flex justify-center" }, [
           (0, import_mithril.default)("div", { class: "w-full max-w-7xl" }, [
             (0, import_mithril.default)("div", { class: "mb-8 text-lg font-medium" }, "Appearance"),
-            (0, import_mithril.default)("div", { class: "mb-4 text-sm font-medium" }, "Theme"),
+            (0, import_mithril.default)("div", { class: "mb-6 text-sm font-medium" }, "Theme"),
             (0, import_mithril.default)("div", { class: "flex flex-row items-center space-x-8 text-sm" }, [
-              (0, import_mithril.default)("div", [
+              (0, import_mithril.default)("div", { class: "cursor-pointer", onclick: () => setTheme("light") }, [
                 (0, import_mithril.default)("div", { class: "h-24 w-40 mb-4 rounded-lg bg-white border border-gray-400/50" }),
                 (0, import_mithril.default)("div", "Light")
               ]),
-              (0, import_mithril.default)("div", [
+              (0, import_mithril.default)("div", { class: "cursor-pointer", onclick: () => setTheme("dark") }, [
                 (0, import_mithril.default)("div", { class: "h-24 w-40 mb-4 rounded-lg bg-gray-800 border border-gray-500/50" }),
                 (0, import_mithril.default)("div", "Dark")
               ]),
-              (0, import_mithril.default)("div", [
+              (0, import_mithril.default)("div", { class: "cursor-pointer", onclick: () => setTheme("lime") }, [
                 (0, import_mithril.default)("div", { class: "h-24 w-40 mb-4 rounded-lg bg-lime-500 border border-lime-500/50" }),
                 (0, import_mithril.default)("div", "Lime")
               ]),
-              (0, import_mithril.default)("div", [
+              (0, import_mithril.default)("div", { class: "cursor-pointer", onclick: () => setTheme("rose") }, [
                 (0, import_mithril.default)("div", { class: "h-24 w-40 mb-4 rounded-lg bg-rose-400 border border-rose-500/50" }),
                 (0, import_mithril.default)("div", "Ros\xE9")
               ])

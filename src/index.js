@@ -1,4 +1,5 @@
 import m from "mithril";
+import { setTheme } from "./../utils/setter"
 
 const Settings = {
 	view: function(vnode) {
@@ -38,21 +39,21 @@ const Settings = {
             m("div", { class: "py-8 px-6 w-full flex justify-center" }, [
                 m("div", { class: "w-full max-w-7xl"},  [
                     m("div", { class: "mb-8 text-lg font-medium"}, "Appearance"),
-                    m("div", { class: "mb-4 text-sm font-medium"}, "Theme"),
+                    m("div", { class: "mb-6 text-sm font-medium"}, "Theme"),
                     m("div", { class: "flex flex-row items-center space-x-8 text-sm"}, [
-                        m("div", [
-                            m("div", { class: "h-24 w-40 mb-4 rounded-lg bg-white border border-gray-400/50"} ),
+                        m("div", { class: "cursor-pointer", onclick: ()=> setTheme("light")} , [
+                            m("div", { class: "h-24 w-40 mb-4 rounded-lg bg-white border border-gray-400/50" } ),
                             m("div", "Light")
                         ]),
-                        m("div", [
+                        m("div", { class: "cursor-pointer", onclick: ()=> setTheme("dark")} , [
                             m("div", { class: "h-24 w-40 mb-4 rounded-lg bg-gray-800 border border-gray-500/50"} ),
                             m("div", "Dark")
                         ]),
-                        m("div", [
+                        m("div", { class: "cursor-pointer", onclick: ()=> setTheme("lime")} , [
                             m("div", { class: "h-24 w-40 mb-4 rounded-lg bg-lime-500 border border-lime-500/50"} ),
                             m("div", "Lime")
                         ]),
-                        m("div", [
+                        m("div", { class: "cursor-pointer", onclick: ()=> setTheme("rose")} , [
                             m("div", { class: "h-24 w-40 mb-4 rounded-lg bg-rose-400 border border-rose-500/50"} ),
                             m("div", "Rosé")
                         ])

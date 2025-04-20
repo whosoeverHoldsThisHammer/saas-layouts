@@ -40,9 +40,17 @@
     :root[data-theme = "lime" ] {
         --bg-color: 255, 255, 255;
         --primary-color: 163, 230, 53;
-        --surface-color: 17, 24, 39;
-        --surface-variant-color: 107, 114, 128;
-        --surface-container-color: 217, 249, 157;
+        --surface-color: 26, 46, 5;
+        --surface-variant-color: 63, 98, 18;
+        --surface-container-color: 236, 252, 203;
+    }
+
+    :root[data-theme = "rose" ] {
+        --bg-color: 255, 255, 255;
+        --primary-color: 163, 230, 53;
+        --surface-color: 76, 5, 25;
+        --surface-variant-color: 159, 18, 57;
+        --surface-container-color: 255, 228, 230;
     }
 
 
