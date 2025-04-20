@@ -154,7 +154,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -558,6 +558,7 @@ video {
   --bg-color: 255, 255, 255;
   --primary-color: 5, 150, 105;
   --surface-color: 17, 24, 39;
+  --surface-variant-color: 107, 114, 128;
   --surface-container-color: 243, 244, 246;
 }
 
@@ -566,6 +567,7 @@ video {
     --bg-color: 17, 24, 39;
     --primary-color: 16, 185, 129;
     --surface-color: 229, 231, 235;
+    --surface-variant-color: 156, 163, 175;
     --surface-container-color: 31, 41, 55;
   }
 }
@@ -574,6 +576,7 @@ video {
   --bg-color: 255, 255, 255;
   --primary-color: 5, 150, 105;
   --surface-color: 17, 24, 39;
+  --surface-variant-color: 107, 114, 128;
   --surface-container-color: 243, 244, 246;
 }
 
@@ -581,6 +584,7 @@ video {
   --bg-color: 17, 24, 39;
   --primary-color: 16, 185, 129;
   --surface-color: 229, 231, 235;
+  --surface-variant-color: 156, 163, 175;
   --surface-container-color: 31, 41, 55;
 }
 
@@ -588,6 +592,7 @@ video {
   --bg-color: 255, 255, 255;
   --primary-color: 163, 230, 53;
   --surface-color: 17, 24, 39;
+  --surface-variant-color: 107, 114, 128;
   --surface-container-color: 217, 249, 157;
 }
 
@@ -696,6 +701,11 @@ video {
   background-color: rgb(132 204 22 / var(--tw-bg-opacity, 1));
 }
 
+.bg-rose-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 113 133 / var(--tw-bg-opacity, 1));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -735,4 +745,8 @@ video {
 
 .text-surface {
   color: rgb(var(--surface-color));
+}
+
+.text-surfacevariant {
+  color: rgb(var(--surface-variant-color));
 }

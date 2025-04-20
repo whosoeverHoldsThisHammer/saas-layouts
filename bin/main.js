@@ -1603,7 +1603,7 @@
           ),
           (0, import_mithril.default)(
             "div",
-            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 font-medium" },
+            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 font-medium text-surfacevariant" },
             (0, import_mithril.default)(
               "svg",
               { "class": "size-6", "xmlns": "http://www.w3.org/2000/svg", "fill": "none", "viewBox": "0 0 24 24", "stroke-width": "1.5", "stroke": "currentColor" },
@@ -1613,7 +1613,7 @@
           ),
           (0, import_mithril.default)(
             "div",
-            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 font-medium" },
+            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 font-medium text-surfacevariant" },
             (0, import_mithril.default)(
               "svg",
               { "class": "size-6", "xmlns": "http://www.w3.org/2000/svg", "fill": "none", "viewBox": "0 0 24 24", "stroke-width": "1.5", "stroke": "currentColor" },
@@ -1623,7 +1623,7 @@
           ),
           (0, import_mithril.default)(
             "div",
-            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 font-medium" },
+            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 font-medium text-surfacevariant" },
             (0, import_mithril.default)(
               "svg",
               { "class": "size-6", "xmlns": "http://www.w3.org/2000/svg", "fill": "none", "viewBox": "0 0 24 24", "stroke-width": "1.5", "stroke": "currentColor" },
@@ -1633,7 +1633,7 @@
           ),
           (0, import_mithril.default)(
             "div",
-            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 font-medium" },
+            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 font-medium text-surfacevariant" },
             (0, import_mithril.default)(
               "svg",
               { "class": "size-6", "xmlns": "http://www.w3.org/2000/svg", "fill": "none", "viewBox": "0 0 24 24", "stroke-width": "1.5", "stroke": "currentColor" },
@@ -1658,6 +1658,10 @@
               (0, import_mithril.default)("div", [
                 (0, import_mithril.default)("div", { class: "h-24 w-40 mb-4 rounded-lg bg-lime-500" }),
                 (0, import_mithril.default)("div", "Lime")
+              ]),
+              (0, import_mithril.default)("div", [
+                (0, import_mithril.default)("div", { class: "h-24 w-40 mb-4 rounded-lg bg-rose-400" }),
+                (0, import_mithril.default)("div", "Ros\xE9")
               ])
             ])
           ])
