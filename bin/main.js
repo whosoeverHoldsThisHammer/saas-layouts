@@ -1587,10 +1587,87 @@
 
   // src/index.js
   var import_mithril = __toESM(require_mithril());
-  var helloWorld = {
+  var Settings = {
     view: function(vnode) {
-      return (0, import_mithril.default)("div", { class: "text-xl font-medium text-primary" }, "hello world");
+      return (0, import_mithril.default)("div", { class: "flex flex-row text-surface" }, [
+        (0, import_mithril.default)("div", { class: "shrink-0 py-8 px-6 pb-4 w-80 space-y-2 text-sm" }, [
+          (0, import_mithril.default)(
+            "div",
+            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 bg-container font-medium cursor-pointer" },
+            (0, import_mithril.default)(
+              "svg",
+              { "class": "size-6", "xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 24 24", "fill": "currentColor" },
+              (0, import_mithril.default)("path", { "fill-rule": "evenodd", "d": "M20.599 1.5c-.376 0-.743.111-1.055.32l-5.08 3.385a18.747 18.747 0 0 0-3.471 2.987 10.04 10.04 0 0 1 4.815 4.815 18.748 18.748 0 0 0 2.987-3.472l3.386-5.079A1.902 1.902 0 0 0 20.599 1.5Zm-8.3 14.025a18.76 18.76 0 0 0 1.896-1.207 8.026 8.026 0 0 0-4.513-4.513A18.75 18.75 0 0 0 8.475 11.7l-.278.5a5.26 5.26 0 0 1 3.601 3.602l.502-.278ZM6.75 13.5A3.75 3.75 0 0 0 3 17.25a1.5 1.5 0 0 1-1.601 1.497.75.75 0 0 0-.7 1.123 5.25 5.25 0 0 0 9.8-2.62 3.75 3.75 0 0 0-3.75-3.75Z", "clip-rule": "evenodd" })
+            ),
+            (0, import_mithril.default)("div", "Appearance")
+          ),
+          (0, import_mithril.default)(
+            "div",
+            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 font-medium text-surfacevariant cursor-pointer hover:bg-container" },
+            (0, import_mithril.default)(
+              "svg",
+              { "class": "size-6", "xmlns": "http://www.w3.org/2000/svg", "fill": "none", "viewBox": "0 0 24 24", "stroke-width": "1.5", "stroke": "currentColor" },
+              (0, import_mithril.default)("path", { "stroke-linecap": "round", "stroke-linejoin": "round", "d": "M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" })
+            ),
+            (0, import_mithril.default)("div", "Notifications")
+          ),
+          (0, import_mithril.default)(
+            "div",
+            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 font-medium text-surfacevariant cursor-pointer hover:bg-container" },
+            (0, import_mithril.default)(
+              "svg",
+              { "class": "size-6", "xmlns": "http://www.w3.org/2000/svg", "fill": "none", "viewBox": "0 0 24 24", "stroke-width": "1.5", "stroke": "currentColor" },
+              (0, import_mithril.default)("path", { "stroke-linecap": "round", "stroke-linejoin": "round", "d": "M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" })
+            ),
+            (0, import_mithril.default)("div", "Profile")
+          ),
+          (0, import_mithril.default)(
+            "div",
+            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 font-medium text-surfacevariant cursor-pointer hover:bg-container" },
+            (0, import_mithril.default)(
+              "svg",
+              { "class": "size-6", "xmlns": "http://www.w3.org/2000/svg", "fill": "none", "viewBox": "0 0 24 24", "stroke-width": "1.5", "stroke": "currentColor" },
+              (0, import_mithril.default)("path", { "stroke-linecap": "round", "stroke-linejoin": "round", "d": "M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" })
+            ),
+            (0, import_mithril.default)("div", "Team")
+          ),
+          (0, import_mithril.default)(
+            "div",
+            { class: "flex flex-row items-center space-x-2.5 rounded-md p-2 font-medium text-surfacevariant cursor-pointer hover:bg-container" },
+            (0, import_mithril.default)(
+              "svg",
+              { "class": "size-6", "xmlns": "http://www.w3.org/2000/svg", "fill": "none", "viewBox": "0 0 24 24", "stroke-width": "1.5", "stroke": "currentColor" },
+              (0, import_mithril.default)("path", { "stroke-linecap": "round", "stroke-linejoin": "round", "d": "M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" })
+            ),
+            (0, import_mithril.default)("div", "Billing")
+          )
+        ]),
+        (0, import_mithril.default)("div", { class: "py-8 px-6 w-full flex justify-center" }, [
+          (0, import_mithril.default)("div", { class: "w-full max-w-7xl" }, [
+            (0, import_mithril.default)("div", { class: "mb-8 text-lg font-medium" }, "Appearance"),
+            (0, import_mithril.default)("div", { class: "mb-4 text-sm font-medium" }, "Theme"),
+            (0, import_mithril.default)("div", { class: "flex flex-row items-center space-x-8 text-sm" }, [
+              (0, import_mithril.default)("div", [
+                (0, import_mithril.default)("div", { class: "h-24 w-40 mb-4 rounded-lg bg-white border border-gray-400/50" }),
+                (0, import_mithril.default)("div", "Light")
+              ]),
+              (0, import_mithril.default)("div", [
+                (0, import_mithril.default)("div", { class: "h-24 w-40 mb-4 rounded-lg bg-gray-800 border border-gray-500/50" }),
+                (0, import_mithril.default)("div", "Dark")
+              ]),
+              (0, import_mithril.default)("div", [
+                (0, import_mithril.default)("div", { class: "h-24 w-40 mb-4 rounded-lg bg-lime-500 border border-lime-500/50" }),
+                (0, import_mithril.default)("div", "Lime")
+              ]),
+              (0, import_mithril.default)("div", [
+                (0, import_mithril.default)("div", { class: "h-24 w-40 mb-4 rounded-lg bg-rose-400 border border-rose-500/50" }),
+                (0, import_mithril.default)("div", "Ros\xE9")
+              ])
+            ])
+          ])
+        ])
+      ]);
     }
   };
-  import_mithril.default.mount(document.getElementById("app"), helloWorld);
+  import_mithril.default.mount(document.getElementById("app"), Settings);
 })();

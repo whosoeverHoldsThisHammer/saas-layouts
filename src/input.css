@@ -4,25 +4,46 @@
 
 @layer base {
     :root {
-        --bg-color: 243, 244, 246;
+        --bg-color: 255, 255, 255;
         --primary-color: 5, 150, 105;
+        --surface-color: 17, 24, 39;
+        --surface-variant-color: 107, 114, 128;
+        --surface-container-color: 243, 244, 246;
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
-            --bg-color: 31, 41, 55;
+            --bg-color: 17, 24, 39;
             --primary-color: 16, 185, 129;
+            --surface-color: 229, 231, 235;
+            --surface-variant-color: 156, 163, 175;
+            --surface-container-color: 31, 41, 55; 
         }
     }
 
+    :root[data-theme = "light" ] {
+        --bg-color: 255, 255, 255;
+        --primary-color: 5, 150, 105;
+        --surface-color: 17, 24, 39;
+        --surface-variant-color: 107, 114, 128;
+        --surface-container-color: 243, 244, 246;
+    }
+
     :root[data-theme = "dark" ] {
-        --bg-color: 31, 41, 55;
+        --bg-color: 17, 24, 39;
         --primary-color: 16, 185, 129;
+        --surface-color: 229, 231, 235;
+        --surface-variant-color: 156, 163, 175;
+        --surface-container-color: 31, 41, 55;
     }
 
     :root[data-theme = "lime" ] {
-        --bg-color: 243, 244, 246;
+        --bg-color: 255, 255, 255;
         --primary-color: 163, 230, 53;
+        --surface-color: 17, 24, 39;
+        --surface-variant-color: 107, 114, 128;
+        --surface-container-color: 217, 249, 157;
     }
+
 
   }
